@@ -1,0 +1,4 @@
+.not-last-child\:mb-rem:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
