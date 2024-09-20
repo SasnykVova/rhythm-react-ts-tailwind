@@ -10,29 +10,13 @@
 
 /* * {
   outline: 3px forestgreen solid;
-} */
+}  */
 
 /* =========================== Tailwind ===========================  */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*========   Custom style   ============*/
-
-.decor-after::after {
-  content: '';
-  background: url('./assets/img/main/decor.svg') 0 0 no-repeat;
-  display: block;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 0;
-  right: 36.3%;
-  transform: translateY(50%);
-}
-.title > span {
-  color: #FF6428;
-}
 
 
 /* =========================== Обнулення стилів ===========================  */
@@ -83,4 +67,95 @@ body {
   height: 100vh;
 }
 
+/*========   Custom style   ============*/
 
+.decor-after::after {
+  content: '';
+  background: url('./assets/img/main/decor.svg') 0 0 no-repeat;
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 36.3%;
+  transform: translateY(50%);
+}
+.title > span {
+  color: #FF6428;
+}
+
+/*========   Categories   ============*/
+.categories-gradient-img::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+
+/*=========  Swiper =======*/
+.swiper-pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width:992px) {
+  .swiper-pagination {
+   justify-content: center;
+   position: relative !important;
+   margin-top: 1rem;
+
+  }
+}
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 16px !important;
+  border-radius: 20px !important;
+}
+.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 24px !important;
+  background-color: #ff6428 !important;
+  transform: rotate(90deg) !important;
+  margin: 0 10px !important;
+}
+
+.avatar-decor::after {
+  content: '';
+  position: absolute;
+  width: 284px;
+  height: 257px;
+  top: 30px;
+  left: -50px;
+  border-radius: 40px 0 400px 400px;
+  transform: rotate(-8deg);
+  background: #ff6428; 
+}
+@media (max-width:1000px) {
+  .avatar-decor::after {
+    left: -5px;
+    top: 50px;
+  }
+}
+@media (max-width:768px) {
+  .avatar-decor::after {
+    width: 0px;
+    height: 0px;
+  }
+}
+/*================== Footer ==================*/
+.footer-title {
+  color: #121212;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.email-decor {
+  background: url('./assets/img/footer/sms.svg') no-repeat left;
+}
+.loc-decor {
+  background: url('./assets/img/footer/location.svg') no-repeat left;
+}

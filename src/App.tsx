@@ -1,8 +1,13 @@
 import "./App.css";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
+import Application from "./components/main/application/Application";
+import Brands from "./components/main/brands/Brands";
 import Categories from "./components/main/categories/Categories";
+import Customers from "./components/main/customers/Customers";
 import Greet from "./components/main/greet/Greet";
 import Store from "./components/main/store/Store";
+import Rhythm from "./components/rhythm/Rhythm";
 
 function App() {
   return (
@@ -15,8 +20,12 @@ function App() {
           <Greet />
           <Store/>
           <Categories/>
+          <Brands/>
+          <Rhythm/>
+          <Customers/>
+          <Application/>
         </main>
-        <footer className="pt-[10rem]">Footer</footer>
+        <Footer/>
       </div>
     </>
   );

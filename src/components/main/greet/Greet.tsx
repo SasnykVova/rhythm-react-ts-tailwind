@@ -13,7 +13,7 @@ const Greet: React.FC = () => {
         <div>
             <Wrapper>
                 <div className='flex'>
-                    <div className='pt-[14.68rem] grow-0 shrink basis-2/4 max-l:basis-2/3 max-m:basis-full max-m:pt-[10rem]'>
+                    <div className='pt-[14.68rem] grow-0 shrink basis-2/4 max-l:basis-3/5 max-m:basis-full max-m:pt-[10rem]'>
                         <h1 className='font-[CalSans] text-[#121212] text-[3.5rem] font-semibold mb-[1rem] max-s:text-[2.5rem]'>Browse top quality <span className='text-[#FF6428]'>Guitars</span> online</h1>
                         <p className='font-medium mb-[2.06rem] max-w-[400px]'>Explore 50k+ latest collections of branded guitars online with Rhythm.</p>
                         <div className='flex items-center gap-[2.5rem]'>
@@ -24,8 +24,8 @@ const Greet: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='grow-0 shrink basis-2/4 max-l:basis-1/3 max-m:hidden'>
-                        <div className='mr-[-135px] inline-block relative decor-after'><img src={mainDecor} alt='Main decor'/></div>
+                    <div className='grow-0 shrink basis-2/4 max-l:basis-2/5 max-m:hidden'>
+                        <div className='mr-[-135px] inline-block relative decor-after w-full'><img src={mainDecor} alt='Main decor'/></div>
                     </div>
                 </div>
             </Wrapper>
